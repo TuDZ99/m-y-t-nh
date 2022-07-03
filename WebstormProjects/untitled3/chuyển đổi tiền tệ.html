@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="dauvao">
+<select name="" id="select1">
+    <option value="a">VND</option>
+    <option value="b">USD</option>
+</select>
+<select name="" id="select2">
+    <option value="a">VND</option>
+    <option value="b">USD</option>
+</select>
+<button onclick="chuyenDoi()">Convert</button>
+<h1 id="ketqua"></h1>
+<script>
+    function chuyenDoi(){
+        let　nhapTien = document.getElementById('nhapTien').value;
+        let nhap = document.getElementById('chuyendoi').value;
+        console.log('chuyen , nhap');
+        let xuat =document.getElementById('chuyendoi2').value;
+        console.log('xuat' xuat)
+        if (nhap === xuat){
+            document.getElementById('ketqua').innerText = nhapTien;
+        } else {
+            if ( nhap === 'VND') {
+                document.getElementById('ketqua').innerText = nhapTien / 23000;
+            } else {
+                document.getElementById('ketqua').innerText = nhapTien / 23000;
+            }
+        }
+    }
+
+
+
+</script>
+</body>
+</html>
