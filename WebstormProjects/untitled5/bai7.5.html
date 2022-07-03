@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="number1" type="text">
+<input id="number2" type="text">
+<button onclick="kiemTraKetQua">ket qua</button>
+<p id="chia het"></p>
+<script>
+    function kiemTraKetQua(){
+        let number1 = document.getElementById('number1').value;
+        console.log("number1", number1)
+        let number2 = document.getElementById('number2').value;
+        console.log("number2", number2)
+        if (number1%number2===0){
+            document.getElementById('chia het').innerText ='so' + number1 + number2 + "chia het";
+        } else {
+            document.getElementById('chia het').innerText ='so' + number1 + number2 + 'k chia het';
+        }
+    }
+</script>
+</body>
+</html>

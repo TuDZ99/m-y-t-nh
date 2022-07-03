@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Chỉ số BMI</h2>
+<h3>Cân nặng</h3>
+<input id="canNang" type="text" id="Cân nặng">
+<h3>Chiều cao</h3>
+<input id="chieuCao" type="text" id="Chiều cao">
+<button onclick="kiemtra()">Kiểm tra</button>
+<p id="'ket qua">Kết quả</p>
+<script>
+    function kiemtra(){
+        let canNang = document.getElementById('canNang').value;
+        let chieuCao = document.getElementById('chieuCao').value;
+        let bmi = canNang /(chieuCao + chieuCao)
+        if (bmi < 18){
+            document.getElementById('kiemtra').innerText = 'xi ke';
+        } else if (bmi < 25.0){
+            document.getElementById('kiemtra').innerText = 'binh thuong';
+        } else if (bmi <30.0){
+            document.getElementById('kiemtra').innerText = 'hoi beo';
+        } else {
+            document.getElementById('kiemtra').innerText = 'beo phi';
+        }
+    }
+</script>
+</body>
+</html>
